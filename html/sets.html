@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ES6 Basics</title>
+</head>
+<body>
+	<div>
+		<h2>ES6 Basics</h2>
+	</div>
+</body>
+<script type="text/ecmascript">
+	var sets = new Set();
+	sets.add(1);
+	sets.add('a');
+	sets.add(1); // we adding one entry with duplicate values
+
+	for(let test of sets){
+		console.log(test);
+	}
+
+
+	var sets = new Set([1,2,3,5,8]);
+	console.log(sets.size);
+	console.log(sets.has(1));
+	console.log(sets.has(9));
+</script>
+</html>

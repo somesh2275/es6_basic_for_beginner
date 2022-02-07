@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ES6 Basics</title>
+</head>
+<body>
+	<div>
+		<h2>ES6 Basics</h2>
+	</div>
+</body>
+<script type="text/ecmascript">
+	let spreadAttr = (...arr) => {
+		console.log(arr);
+		let mult = 0;
+		for(let exam of arr){
+			mult += exam;
+		}
+
+		console.log(mult);
+	}
+
+	spreadAttr(15,20,30,60,120);
+
+	let test = Math.max(50,100,150);
+	console.log(test);
+
+	let arr = [10,60,120];
+	let test1 = Math.max(arr);
+	console.log(test1);
+
+	let arr = [10,60,120];
+	let test2 = Math.max(...arr);
+	console.log(test2);
+</script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ES6 Basics</title>
+</head>
+<body>
+	<div>
+		<a href="#" onclick="testingArrow(5)">Arrow</a><h2>ES6 Basics</h2>
+		<a href="#" onclick="testingArrow(5,10)">Arrow</a><h2>ES6 Basics</h2>
+		<a href="#" onclick="testingArrowNew(5)">Arrow</a><h2>ES6 Basics</h2>
+		<a href="#" onclick="testingArrowNew(5,10)">Arrow</a><h2>ES6 Basics</h2>
+	</div>
+</body>
+<script type="text/ecmascript">
+	let testingArrow = (a,b = 5) => {
+		console.log(a*b);
+	}
+	let testingArrowNew = (a = 5, b) => {
+		console.log(a*b);
+	}
+</script>
+</html>

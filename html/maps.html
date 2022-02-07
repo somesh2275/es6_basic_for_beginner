@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ES6 Basics</title>
+</head>
+<body>
+	<div>
+		<h2>ES6 Basics</h2>
+	</div>
+</body>
+<script type="text/ecmascript">
+	var NewMap = new Map();
+	NewMap.set('name', 'John'); 
+	NewMap.set('id', 2345796);
+	NewMap.set('interest', ['js', 'ruby', 'python']);
+
+	let t = NewMap.get('name'); // John
+	console.log(t);
+	let t1 = NewMap.get('id'); // 2345796
+	console.log(t1);
+	let t2 = NewMap.get('interest'); //Array [ "js", "ruby", "python" ]
+	console.log(t2);
+	let t3 = NewMap.size
+	console.log(t3);
+	let t4 = NewMap.keys(); // outputs only the keys. 
+	console.log(t4);
+	let t3 = NewMap.values();
+	console.log(t5);
+</script>
+</html>
